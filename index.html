@@ -27,7 +27,7 @@
         <section class="wrapper">
             <div class="container-full">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <!-- Start sidenav_wrapper -->
                         <div class="sidenav_wrapper navbar-expand-md">
                             <div class="brand-top text-center">
@@ -55,14 +55,28 @@
                                             <li><a class="page-scroll" href="#requirement"><i class="far fa-dot-circle"></i> Requirement</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="page-scroll" href="#installation-process"><i class="fas fa-home"></i> Installation Instructions</a></li>
+                                    <li>
+                                        <a class="page-scroll" href="#installation-process"><i class="fas fa-home"></i> Installation Instructions</a>
+                                        <ul>
+                                            <li><a class="page-scroll" href="#download"><i class="far fa-dot-circle"></i> Download Package from TF</a></li>
+                                            <li><a class="page-scroll" href="#extract"><i class="far fa-dot-circle"></i> Extract Package</a></li>
+                                            <li>
+                                                <a class="page-scroll" href="#theme-installation"><i class="far fa-dot-circle"></i> Theme Installation</a>
+                                                <ul>
+                                                    <li><a class="page-scroll" href="#upload-wordpress"><i class="far fa-dot-circle"></i> Theme Installation via WordPress</a></li>
+                                                    <li><a class="page-scroll" href="#upload-ftp"><i class="far fa-dot-circle"></i> Theme Installation via FTP</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="page-scroll" href="#plugin-installation"><i class="far fa-dot-circle"></i> Plugin Installation</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a class="page-scroll" href="#getting_start"><i class="fas fa-home"></i> Getting Started</a></li>
                                 </ul>
                             </div>
                         </div>
                         <!-- End sidenav_wrapper -->
                     </div>
-                    <div class="col-lg-9">
+                    <div class="col-lg-8">
                         <!-- Start document_content -->
                         <div class="document_content">
                             <!-- Start intro -->
@@ -160,39 +174,73 @@
                                     </ul>
                                     <p class="mb-20 p_bg p_info">(for legacy environments also PHP versions 5.3.x will work but it is recommended to be on at least PHP 5.6 and preferably PHP 7.0. WordPress recommends PHP 7)</p>
                                 </div>
-                                
-                                <div class="install-step">
-                                    <div class="step mb-60">
-                                        <h4 class="mb-20"><i class="fas fa-angle-right"></i> <strong class="badge badge-primary">Step 1</strong> First extract your zip file, what you have downloaded from Codecanyon. And enter to extracted folder. up to -> inside [Main Files] folder. </h4>
-                                        <img src="assets/img/extract-1.png" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="step mb-60">
-                                        <h4 class="mb-20"><i class="fas fa-angle-right"></i>  <strong class="badge badge-primary">Step 2</strong> Chose right plugin file. Like following screenshot:</h4>
-                                        <img src="assets/img/extract-2.png" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="step mb-60">
-                                        <h4 class="mb-20"><i class="fas fa-angle-right"></i>  <strong class="badge badge-primary">Step 3</strong> In your WordPress Admin Panel, go to Plugins > Installed Plugins</h4>
-                                        <img src="assets/img/extract-3.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="step mb-60">
-                                        <h4 class="mb-20"><i class="fas fa-angle-right"></i>  <strong class="badge badge-primary">Step 4</strong> Click on the Add New button</h4>
-                                        <img src="assets/img/extract-4.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="step mb-60">
-                                        <h4 class="mb-20"><i class="fas fa-angle-right"></i>  <strong class="badge badge-primary">Step 5</strong> Click on the Upload Plugin button</h4>
-                                        <img src="assets/img/extract-5.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="step mb-60">
-                                        <h4 class="mb-20"><i class="fas fa-angle-right"></i>  <strong class="badge badge-primary">Step 6</strong> Activate the newly installed Plugin</h4>
-                                        <img src="assets/img/extract-6.jpg" class="img-fluid" alt="">
-                                    </div>custom-designed-table.png
-                                </div>
                             </div><!-- End before installation -->
                             
                             <!-- Start installation process -->
                             <div class="installation pb-50" id="installation-process">
                                 <div class="document-title mb-30">
                                     <h1><span>#</span>Installation Instructions</h1>
+                                </div>
+                                
+                                <div class="install-step" id="download">
+                                    <div class="document-title mb-30">
+                                        <h2><span>#</span>Download Package from ThemeForest</h2>
+                                    </div>
+                                    <div class="install-discription mb-30">
+                                        <p class="mb-20 p_bg p_warning">After purchasing our theme, you need to go your download area, click on button Download and select download All files & documentation.</p>
+                                        <img alt="Download Process | Medilac WooCommerce WordPress Theme" class="" src="assets/img/download.jpg" />
+                                    </div>
+                                </div>
+                                
+                                <div class="install-step" id="extract">
+                                    <div class="document-title mb-30">
+                                        <h2><span>#</span>Extract Package</h2>
+                                    </div>
+                                    <div class="install-discription mb-30">
+                                        <p class="mb-20 p_bg p_warning">After download completed, you need to unzip the package and select the way you want to install the theme.</p>
+                                        <img alt="Extract Process | Medilac WooCommerce WordPress Theme" class="" src="assets/img/extract.png" />
+                                        <p class="mb-20">Once the download is complete, unzip the file and you would see the following packages:</p>
+                                        <ul>
+                                            <li><strong>Documentation</strong> - our detail documentation for the theme</li>
+                                            <li><strong>Licensing</strong> - the theme license</li>
+                                            <li><strong>Plugins</strong> - the Bundled Plugins</li>
+                                            <li><strong>Sample Data</strong> - the sample data of the demos, you can import it</li>
+                                            <li><strong>Theme</strong> - for manual installation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="install-step" id="theme-installation">
+                                    <div class="document-title mb-30">
+                                        <h2><span>#</span>Theme Installation</h2>
+                                    </div>
+                                    <div class="install-discription mb-30">
+                                        <p class="mb-20 p_bg p_warning">You can install <strong>Medilac</strong> theme directly in Wordpress Admin or upload files via FTP</p>
+                                    </div>
+                                    
+                                    <div class="document-title mb-30" id="upload-wordpress">
+                                        <h3><span>#</span>Theme Installation via WordPress</h3>
+                                    </div>
+                                    <div class="install-discription mb-30">
+                                        <div class="step">
+                                            <p class="mb-20 p_bg p_warning">Please, follow the steps below to install Medilac Theme (Make sure you had extract files).</p>
+                                            <ul class="no-bullets">
+                                                <li><strong class="badge badge-primary">Step 1</strong>  Login to your WordPress Dasrdoard</li>
+                                                <li><strong class="badge badge-primary">Step 2</strong>  Navigate to Appearance ► Themes</li>
+                                                <li>
+                                                    <strong class="badge badge-primary">Step 3</strong>  Click <strong>Add New</strong> button on top of the page.
+                                                    <img alt="Install via WordPress Dashboard | Medilac WooCommerce WordPress Theme" src="assets/img/install-theme.jpg" />
+                                                </li>
+                                                <li>
+                                                    <strong class="badge badge-primary">Step 4</strong>  Then click <strong>Upload Theme</strong>
+                                                    <img alt="Install via WordPress Dashboard | Medilac WooCommerce WordPress Theme" src="assets/img/install-theme-u1.png" />
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="document-title mb-30" id="upload-ftp">
+                                        <h3><span>#</span>Theme Installation via FTP</h3>
+                                    </div>
                                 </div>
                             </div>
                             <!-- End installation process -->

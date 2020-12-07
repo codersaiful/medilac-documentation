@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:100,400,500,600,700');
+* {
+    margin:0;
+    padding:0
+}
+a {
+    text-decoration:none;
+    color: #007692;
+}
+a:hover,
+a:focus {
+    text-decoration:none;
+    color: #007692;
+        
+}
+dl,
+ol,
+ul {
+    width: 100%;
+}
+ul{
+    margin-bottom: 0;
+}
+li {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0px;
+}
+p{
+    margin:0;
+}
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #525252;
+    overflow-x: hidden;
+}
+section {
+    /*overflow: hidden;*/
+}
+.section-padding{
+    padding: 60px 0;
+}
+.padding_left{
+    padding-left: 0;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.mt-60{
+    margin-top: 60px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.pt-30{
+    padding-top: 30px;
+}
+.pt-40{
+    padding-top: 40px;
+}
+.pt-50{
+    padding-top: 50px;
+}
+.pt-60{
+    padding-top: 60px;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.pb-30{
+    padding-bottom: 30px;
+}
+.pb-40{
+    padding-bottom: 40px;
+}
+.pb-50{
+    padding-bottom: 50px;
+}
+.pb-60{
+    padding-bottom: 60px;
+}
+/*End Theme css*/
+
+
+/*
+    Start sidenav css
+*/
+.sidenav_wrapper{
+	background: #fefefe;
+        position: fixed;
+	height: 100%;
+	width:  21%;
+	padding: 20px;
+	box-shadow: 0 0 1px #e7e7e7;
+}
+.sidenav_wrapper:hover {
+    overflow-y: scroll;
+}
+.sidenav_wrapper:hover .b-text {
+    margin-right: -17px;
+}
+.brand-top{
+	border-bottom: 1px solid #e7e7e7;
+	padding: 30px 10px; 
+}
+.b-text{
+	margin-bottom: 30px;
+}
+.b-form input{
+	height: 40px;
+	width: 100%;
+	border: 1px solid #e7e7e7;
+	color: #ccc;
+	padding: 10px;
+	font-size: 15px;
+}
+.b-form input::placeholder{
+	color: #ccc;
+	font-size: 14px;
+}
+.main_menu .nav_menu li a{
+	display: block;
+	padding: 5px 10px;
+	color: #007692;
+	font-size: 14px;
+	font-weight: 400;
+	transition: all .6s;
+}
+.main_menu .nav_menu li:hover{
+    background-color: #f7f7f7;
+}
+.main_menu .nav_menu li.active{
+    background-color: #efefef;
+}
+.main_menu .nav_menu li a:hover{
+	padding-left: 20px;
+}
+.main_menu .nav_menu li a i{
+	margin-right: 10px;
+}
+.main_menu .nav_menu li ul {
+    display: none;
+    padding-left: 25px;
+}
+.main_menu .nav_menu li.active ul {
+    display: block;
+}
+
+/*Responsive css*/
+.navbar-toggler {
+    padding: 5px 10px;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+.navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+    color: #5bb8d4;
+}
+/*
+    End sidenav css
+*/
+
+
+/* Start intro css*/
+.document_content{
+    width: 90%;
+    padding: 0 20px;
+}
+.document-title{
+    position: relative;
+}
+.document-title span{
+    color: #007692;
+    margin-right: 10px;
+}
+.intro-author  strong{
+    margin-right: 10px;
+}
+/* End intro css*/
+
+/* Start installation css*/
+.step img{
+    box-shadow: 0 0  5px #ccc;
+}
+.step h4{
+    line-height: 40px;
+}
+.step h4 i{
+    margin-right: 10px;
+    color: #007692;
+}
+
+#screenshots .screenshots-box {
+    border-radius: 5px;
+    background: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+#screenshots img {
+    border-radius: 10px;
+}
+#screenshots h4.text-center {
+    font-size: 14px;
+    padding: 10px 0 0;
+}
+/*#screenshots .screenshots-box:before {
+    content: "\002B";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+    background: #00737d00;
+    cursor: pointer;
+    opacity: 0;
+    font-size: 100px;
+    color: #fff;
+    text-align: center;
+    line-height: 2.5;
+}
+#screenshots .screenshots-box:hover:before {
+    background: #00737d8a;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.4s;
+}
+@keyframes fadeInOpacity {
+    0% {
+            opacity: 0;
+    }
+    100% {
+            opacity: 1;
+    }
+}*/
+/* End installation css*/
+
+/* Start getting_start css*/
+.p_bg a {
+    color: black;
+    text-decoration: underline;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.p_bg {
+    background: #007692;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+}
+.badge-primary {
+    background-color: #007692;
+}
+.p_bg.p_warning {
+    background: #ffc10759;
+    color: black;
+}
+.step_bg{
+    background: #f7f7f7;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.step_bg h5{
+    font-weight: bold;
+    color: #5bb8d4;
+}
+.new_step ol {
+    padding: 30px 0 30px 30px;
+}
+.new_step ol li {
+    counter-increment: item;
+    margin-bottom: 1em;
+    display: flex;
+}
+.new_step ol li:before {
+    content: counter(item);
+    background: #007692;
+    border-radius: 50%;
+    color: white;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    font-weight: 500;
+    flex: none;
+}
+.new_step .accordion .wrap .collapsable {
+    display: none;
+    margin: 20px 0;
+    
+}
+
+.new_step .accordion.show .wrap .collapsable{
+    display: block;
+    transition: all 0.4s;
+}
+
+.new_step .accordion .wrap .collapsable img {
+    width: 100%;
+    
+}
+.new_step .accordion .wrap p {
+    cursor: pointer;
+    color: #007692;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.new_step .accordion.show .wrap p {
+    text-decoration: none;
+}
+.woocomerce_sms img{
+    box-shadow: 0 0  5px #ccc;
+}
+/* End getting_start css*/
+
+/* Start video css*/
+.video-list iframe{
+    box-shadow: 0 0  5px #ccc;
+}
+/* End video css*/
+
+/* Start feature css*/
+.list-feature{
+    background: #f7f7f7;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.list-feature h5{
+    font-weight: bold;
+    color: #5bb8d4;
+}
+/* End feature css*/
+
+/* Start faq css*/
+
+.faq-list h4{
+    font-weight: 500;
+}
+.faq-list p strong{
+    margin-right: 10px;
+}
+
+/* End faq css*/
+
+/* Start screenshots css*/
+.screenshots-intro a{
+    font-weight: 500;
+    font-size: 17px;
+}
+.screenshots-box img{
+    box-shadow: 0 0  5px #ccc;
+}
+/* End screenshots css*/
+
+
+/* Start files_structure css*/
+
+.main_folder h5 i{
+    margin-right: 10px;
+    color: #5bb8d4;
+}
+ul.main-file {
+    padding-left: 20px;
+}
+.main-file li.fs_file:before{
+    font-size: 15px;
+    margin-right: 10px;
+    color: #5bb8d4;
+}
+.main-file li.folder > h6.folder_name{
+    padding-left: 0px;
+    margin-bottom: 6px;
+}
+.main-file li.folder h6.folder_name:before{
+    color: #5bb8d4;
+    margin-right: 10px;
+    content: '\f07c';
+    font-family: 'Font Awesome 5 Free';
+}
+.main-file > li.folder >h6.folder_name:before{
+    color: #5bb8d4;
+    margin-right: 10px;
+    content: '\f07c';
+    font-family: 'Font Awesome 5 Free';
+}
+.main-file li.folder .file_wrapper{
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.main-file .fs_file:before{
+    font-size: 15px;
+    margin-right: 10px;
+    color: #5bb8d4;
+}
+.main-file li.file_type_php:before{
+    content: "\f1c9";
+    font-family: 'Font Awesome 5 Free';
+}
+.main-file li.file_type_css:before{
+    content: "\f38b";
+    font-family: 'Font Awesome 5 Brands';
+}
+.main-file li.file_type_img:before{
+    content: "\f03e";
+    font-family: 'Font Awesome 5 Free';
+}
+.main-file li.file_type_js:before{
+    content: "\f3b8";
+    font-family: 'Font Awesome 5 Brands';
+}
+.main-file li.file_type_txt:before{
+    content: "\f15b";
+    font-family: 'Font Awesome 5 Free';
+}
+
+/* End files_structure css*/
+
+
+/* Start credit css*/
+
+.credit-list h4 i{
+    margin-right: 10px;
+    color: #5bb8d4;
+}
+/* End credit css*/
+
+/* Start Changlog css*/
+.changelog-area h4 i{
+    margin-right: 10px;
+    color: #5bb8d4;
+}
+.changelog-area .changelog-list {
+    margin-left: 50px;
+}
+.changelog-area .changelog-list li{
+    list-style: circle;
+}
+.again_thanks{
+    box-shadow: 0 0 1px #ccc;
+    padding: 10px 20px;
+    background: #f7f7f7;
+}
+
+/* End Changlog css*/
+
+
+/*Start Scroll top css*/
+#scroll-up {
+    position: fixed;
+    z-index: 337;
+    bottom:30px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    display: none;
+    background: #007692;
+}
+#scroll-up:hover,
+#scroll-up:focus{
+    background: #0f576d;
+    color: #fff;
+}
+/*End Scroll top css*/
+ul.plugin-features li {
+    padding-left: 40px;
+    display: block;
+
+}
+ul.plugin-features li:before {
+    content: "\f058";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 10px;
+    margin-left: -26px;
+}
+@media (min-width:768px){
+    ul.plugin-features li {
+        padding-left: 40px;
+        display: inline-block;
+        margin-right: 10px;
+        width: 47%;
+    }
+}/*
+@media (min-width:992px){
+    ul.plugin-features {
+        column-count: 3;
+    }
+}*/

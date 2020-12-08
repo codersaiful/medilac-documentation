@@ -43,7 +43,6 @@ jQuery(function() {
         //Initializing active class
         $("ul.nav_menu li").removeClass("active");
         $("ul.nav_menu li a[href='" + hash + "']").parent().addClass("active");
-        $("ul.nav_menu li a[href='" + hash + "']").parents().find('li').addClass("active");
         
     }
 
